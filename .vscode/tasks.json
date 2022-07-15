@@ -1,0 +1,45 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "Build with GCC v10 modified.",
+			"command": "/usr/bin/g++-10",
+			"args": [
+				"-g",
+				"-std=c++2a",
+				"${workspaceFolder}/*.cpp",
+				"-o",
+				"${fileDirname}/output"
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compiler: /usr/bin/g++-10"
+		},
+		{
+			"type": "cppbuild",
+			"label": "Build with Clang v12 modified.",
+			"command": "/usr/bin/clang++-12",
+			"args": [
+				"-g",
+				"-std=c++2a",
+				"${workspaceFolder}/*.cpp",
+				"-o",
+				"${fileDirname}/output"
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compiler: /usr/bin/clang++-10"
+		}
+	]
+}
